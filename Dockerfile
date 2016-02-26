@@ -8,7 +8,7 @@ RUN echo "deb http://mirrors.ustc.edu.cn/debian jessie main contrib non-free" > 
     echo "deb http://mirrors.ustc.edu.cn/debian jessie-updates main contrib non-free" >> /etc/apt/sources.list && \
     echo "deb-src http://mirrors.ustc.edu.cn/debian jessie-updates main contrib non-free" >> /etc/apt/sources.list
 RUN export DEBIAN_FRONTEND='noninteractive' && apt-get update -y -qq && \
-    apt-get install -qq --no-install-recommends ca-certificates php5 php5-fpm php5-cli php-pear php5-mysql php5-json php5-mcrypt php5-gd php5-curl php5-intl php5-redis zip unzip && \
+    apt-get install -qq --no-install-recommends ca-certificates php5 php5-fpm php5-cli php-pear php5-mysql php5-json php5-mcrypt php5-gd php5-curl php5-intl php5-redis php5-imap zip unzip && \
     pear install mail_mime mail_mimedecode net_smtp net_idna2-beta auth_sasl net_sieve crypt_gpg && \
     rm -rf /var/lib/apt/lists/*
 
