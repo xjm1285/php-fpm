@@ -19,7 +19,7 @@ RUN sed -i -e "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g" /etc/php5/fpm/php.ini
   sed -i -e "s|;date.timezone =|date.timezone = Asia/Shanghai|" /etc/php5/fpm/php.ini && \
   sed -i "N;4izend_extension=/usr/lib/php5/20131226/xdebug.so" /etc/php5/fpm/php.ini && \
   sed -i "N;4ixdebug.remote_enable=on" /etc/php5/fpm/php.ini && \
-  sed -i "N;4ixdebug.remote_host = 192.168.1.136" /etc/php5/fpm/php.ini && \
+  sed -i "N;4ixdebug.remote_host = 192.168.1.25" /etc/php5/fpm/php.ini && \
   sed -i "N;4ixdebug.idekey = phpStorm" /etc/php5/fpm/php.ini && \
   sed -i -e "s/;daemonize\s*=\s*yes/daemonize = no/g" /etc/php5/fpm/php-fpm.conf && \
   sed -i -e "s/;catch_workers_output\s*=\s*yes/catch_workers_output = yes/g" /etc/php5/fpm/pool.d/www.conf && \
